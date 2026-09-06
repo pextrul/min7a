@@ -1,0 +1,65 @@
+body{
+    background-color:rgb(217, 109, 109);
+    direction: rtl; /* مهم للعربي */
+}
+
+.text{
+    box-shadow:3px 6px 30px 1px rgba(0, 0, 0, 0.44);
+    width:400px;
+    height:550px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:1px;
+    margin-top:160px;
+    border-radius:20px;
+    background-color:rgba(183, 210, 223, 0.538);
+    text-align: center; /* باش كلشي يجي فالوسط */
+}
+
+.text1{
+    margin-top:45px;
+    font-size: 28px;
+}
+
+.email input{
+    margin-top:50px;
+    width: 280px; /* كبرتو */
+    height:35px;
+    border-radius:5px;
+    padding-right:15px; /* بدلنا left ل right */
+    border: 1px solid #ccc;
+    direction: rtl;
+    text-align: right;
+    box-shadow:10px 10px 12px 1px rgba(0, 0, 0, 0.44);
+} 
+
+.password input{
+    margin-top:20px;
+    width: 280px; /* كبرتو */
+    height:35px;
+    border-radius:5px;
+    padding-right:15px; /* بدلنا left ل right */
+    border: 1px solid #ccc;
+    direction: rtl;
+    text-align: right;
+    box-shadow:10px 10px 12px 1px rgba(0, 0, 0, 0.44);
+}
+
+.button input{
+    margin-top:44px;
+    width:160px;
+    height:38px;
+    border-radius:10px;
+    background-color:rgba(37, 252, 137, 0.588);
+    border:1px solid black;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.link{
+    display:block;
+    padding-top:15px;
+    color:rgba(0, 0, 255, 0.633);
+    font-size:15px;
+    text-decoration: none;
+}

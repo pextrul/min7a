@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css2.css">
+    <title>تسجيل الدخول</title>
+</head>
+<body>
+    
+    <div class="text">
+            <h1 class="text1">
+                تسجيل الدخول
+            </h1>
+        <div class="email">
+            <input type="email" id="email" placeholder="البريد الالكتروني">
+        </div>
+        <div class="password">
+            <input type="password" id="password" placeholder="كلمة المرور">
+        </div>
+        <a href="https://accounts.google.com/signup" class="link">
+            ليس لدي حساب (تسجيل حساب)
+        </a>
+        <div class="button">
+            <input type="button" value="تسجيل الدخول" onclick="checkLogin()">
+        </div>
+    </div>
+
+<script>
+function checkLogin() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let emailOk = email.endsWith(".com");
+    let passwordOk = password.length >= 8;
+
+    if (emailOk && passwordOk) { 
+        window.location.href = 'html3.html';
+    } else {
+        if (!emailOk) {
+            alert("الإيميل خاصو يسالي ب .com");
+        } else {
+            alert("كلمة المرور خاصها تكون 8 حروف او كثر");
+        }
+    }
+}
+</script>
+
+</body>
+</html>
